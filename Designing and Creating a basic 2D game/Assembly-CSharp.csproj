@@ -53,9 +53,9 @@
   <ItemGroup>
      <Compile Include="Assets\force.cs" />
      <Compile Include="Assets\levelmanager.cs" />
-     <Compile Include="Assets\LooseCollider.cs" />
      <Compile Include="Assets\Player1.cs" />
      <Compile Include="Assets\Player2.cs" />
+     <Compile Include="Assets\Scoreboard.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>F:/Mcast/Designing and Creating a basic 2D game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
