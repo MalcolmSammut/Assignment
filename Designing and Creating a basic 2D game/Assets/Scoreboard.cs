@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Scoreboard : MonoBehaviour {
 	private int count;
 	private int count2;
 	public Text Score;
 	public Text Score2;
+	public string name;
 	void Start(){
 		count = 0;
 		setCountText ();
@@ -29,5 +31,13 @@ public class Scoreboard : MonoBehaviour {
 	void setCountText(){
 		Score.text = "Score: " + count.ToString ();
 		Score2.text = "Score: " + count2.ToString ();
+	}
+		void Update()
+		{if (count == 3) {
+			SceneManager.LoadScene(name);
+
+		} else if (count2 == 3) {
+			SceneManager.LoadScene(name);
+		}
 	}
 }
