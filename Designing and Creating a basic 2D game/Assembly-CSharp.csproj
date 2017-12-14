@@ -55,6 +55,8 @@
      <Compile Include="Assets\levelmanager.cs" />
      <Compile Include="Assets\Player1.cs" />
      <Compile Include="Assets\Player2.cs" />
+     <Compile Include="Assets\Rotate.cs" />
+     <Compile Include="Assets\Score.cs" />
      <Compile Include="Assets\Scoreboard.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>H:/mcast2/Designing and Creating a basic 2D game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>

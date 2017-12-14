@@ -9,10 +9,10 @@ public class force : MonoBehaviour {
 	void Start () {
 		int rand = Random.Range (0, 2);
 		if (rand == 0) {
-			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (-8f, 0f);
+			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (-10f, 0f);
 		}
 		else if(rand==1){
-			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (8f, 0f);
+			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (10f, 0f);
 		}
 	}
 	
@@ -24,10 +24,10 @@ public class force : MonoBehaviour {
 		float distance = this.transform.position.y - GameObject.Find ("Player1").transform.position.y;
 		float distance2 = this.transform.position.y - GameObject.Find ("Player2").transform.position.y;
 		if (hit.gameObject.name=="Player1") {
-			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (8f,distance*3f);
+			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (10f,distance*3f);
 		}
 		if(hit.gameObject.name=="Player2"){
-			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (-8f,distance2*3f);
+			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (-10f,distance2*3f);
 		}
 	}
 }
