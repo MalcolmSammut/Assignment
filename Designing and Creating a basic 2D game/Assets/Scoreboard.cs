@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class Scoreboard : MonoBehaviour {
 	private int count;
 	private int count2;
-	private int total1;
-	private int total2;
+	public static int total1;
+	public static int total2;
 	public Text Score;
 	public Text Score2;
 	public string name;

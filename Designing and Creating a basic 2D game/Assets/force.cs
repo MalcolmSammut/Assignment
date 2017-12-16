@@ -9,10 +9,10 @@ public class force : MonoBehaviour {
 	void Start () {
 		int rand = Random.Range (0, 2);
 		if (rand == 0) {
-			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (-10f, 0f);
+			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (-10f, 2f);
 		}
 		else if(rand==1){
-			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (10f, 0f);
+			this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (10f, 2f);
 		}
 	}
 	

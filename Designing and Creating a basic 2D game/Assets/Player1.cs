@@ -12,10 +12,10 @@ public class Player1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//this should print in the console the position of the cursor
-		float mousePosInBlocks = (Input.mousePosition.y / Screen.width * 8) - 4f;
+		float mousePosInBlocks = (Input.mousePosition.y / Screen.width * 16) - 4f;
 		Vector3 paddlePosition = new Vector3(this.transform.position.x, mousePosInBlocks , 0f);
-		if (paddlePosition.y > 2.2f)
-			paddlePosition.y = 2.2f;
+		if (paddlePosition.y > 2.3f)
+			paddlePosition.y = 2.3f;
 		else if (paddlePosition.y < -3.3f)
 				paddlePosition.y = -3.3f;
 
